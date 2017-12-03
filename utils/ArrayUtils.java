@@ -2,13 +2,13 @@ package utils;
 
 public class ArrayUtils {
 	
-	public static int[] reverse(int[] myAr) {
-		int[] ff = new int[myAr.length];
-		for(int i = 0; i < myAr.length; i++) {
-			ff[i] = myAr[myAr.length - 1 - i];
-		}
-		
-		return ff;
+	public static void reverse(int[] myAr) {
+		for (int i = 0; i <= (myAr.length - 1)/2; i++) {
+			int li = myAr.length - 1;
+			myAr[i] = myAr[i] + myAr[li - i];
+			myAr[li - i] = myAr[i] - myAr[li - i];
+			myAr[i] = myAr[i] - myAr[li - i];
+		 }
 	}
 	
 	public static String stringifyArray(int[] array) {
