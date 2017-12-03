@@ -16,8 +16,8 @@ public class Driver {
 		System.out.println(" ");
 		
 		int[] array = {9, 20, 3, 44, 88, 300};
-		int[] toBeString = ArrayUtils.reverse(array);
-		System.out.println(ArrayUtils.stringifyArray(toBeString));
+		ArrayUtils.reverse(array);
+		System.out.println(ArrayUtils.stringifyArray(array));
 		
 		double val = 15.4;
 		int result = Math.factorial((int)val);
